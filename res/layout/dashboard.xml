@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/header"/>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bt_addcart">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/banner"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:elevation="12dp"
+                        android:focusable="true"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:background="@color/yellow"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="50dp"
+                                android:padding="10dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/wallet" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Rs. 0.00"
+                                android:id="@+id/totalamt"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="5dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Total Collection"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="14dp"
+                                android:layout_marginBottom="5dp"
+                                />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="8dp">
+
+                            <LinearLayout
+                                android:background="@color/greenlgt"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp">
+
+                                <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_width="50dp"
+                                    android:padding="5dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/neworder" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:id="@+id/neworder"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="New Order"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="5dp"
+                                    />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="8dp">
+
+                            <LinearLayout
+                                android:background="@color/greylgt"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp">
+
+                                <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_width="50dp"
+                                    android:padding="5dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/preorder" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:id="@+id/pdelivery"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Pending Delivery"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="5dp"
+                                    />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="8dp">
+
+                            <LinearLayout
+                                android:background="@color/app_orglgt"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp">
+
+                                <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_width="50dp"
+                                    android:padding="5dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/complete" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:id="@+id/cdelivery"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Completed Delivery"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="5dp"
+                                    />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:elevation="12dp"
+                            android:focusable="true"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="8dp">
+
+                            <LinearLayout
+                                android:background="@color/tred"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp">
+
+                                <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_width="50dp"
+                                    android:padding="5dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/exchange" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:id="@+id/rorder"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Return Order"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="5dp"
+                                    />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/custom_font"
+                            android:text="Pending Delivery"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btnviewmore"
+                            android:text="View More"
+                            android:textColor="@color/yellow"
+                            android:layout_margin="5dp"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/custom_font"
+                            android:background="@drawable/btn_org"
+                            android:layout_width="150dp"
+                            android:layout_height="35dp"/>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:orientation="vertical"
+                        android:scrollbars="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        android:id="@+id/recycler"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/bottom"/>
+
+</RelativeLayout>

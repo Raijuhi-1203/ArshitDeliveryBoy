@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ArshitDeliveryBoy" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/app_org</item>
+        <item name="colorPrimaryDark">@color/app_org</item>
+        <item name="colorAccent">@color/app_org</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

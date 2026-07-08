@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="@drawable/planbox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderid"
+        android:text="Order ID : ODR202121"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/custom_font"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:text="Placed On : August 31,2021"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/custom_font"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pstatus"
+        android:text="Payment Status : Cash on Delivery"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/custom_font"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/amt"
+        android:text="Total Amount : 491 Rs."
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:fontFamily="@font/custom_font"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/btview"
+            android:text="View Details"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/btnblue"
+            android:textColor="@color/app_org"
+            android:fontFamily="@font/custom_font"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/status"
+            android:text="Delivered"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_green"
+            android:textColor="@color/white"
+            android:fontFamily="@font/custom_font"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/btaccept"
+        android:text="Accept Order"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:background="@drawable/btnorange"
+        android:textColor="@color/yellow"
+        android:fontFamily="@font/custom_font"/>
+
+</LinearLayout>

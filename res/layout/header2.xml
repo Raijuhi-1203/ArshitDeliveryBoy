@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/app_org"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:id="@+id/btback"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/custom_font"
+        android:textSize="15dp"
+        android:textColor="@color/yellow"
+        android:layout_gravity="center"
+        android:id="@+id/title"/>
+
+</LinearLayout>

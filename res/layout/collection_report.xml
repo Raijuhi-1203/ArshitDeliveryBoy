@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".Fragment.ShopFragment"
+        android:orientation="vertical">
+
+        <include layout="@layout/header2"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_marginBottom="70dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:text="From"
+                                android:textColor="@color/black"
+                                android:layout_weight="1"/>
+
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:text="To"
+                                android:layout_weight="1"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:editable="false"
+                                android:focusable="true"
+                                android:id="@+id/fdt"
+                                android:textColor="@color/black"
+                                android:layout_weight="1"/>
+
+                            <EditText
+                                android:id="@+id/todt"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:editable="false"
+                                android:focusable="true"
+                                android:layout_weight="1"/>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:id="@+id/btsearch"
+                            android:text="Search"
+                            android:layout_weight="1"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/btnblue"
+                            android:textColor="@color/app_org"
+                            android:fontFamily="@font/custom_font"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:orientation="vertical"
+                            android:scrollbars="vertical"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            android:id="@+id/recycler"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">EasLife Delivery-Boy App</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="batch">batch</string>
+
+    <string-array name="gender_array">
+        <item>MALE</item>
+        <item>FEMALE</item>
+    </string-array>
+
+
+    <string-array name="cancelorder">
+        <item>I have changes my mind.</item>
+        <item>I bought the wrong item.</item>
+        <item>I found a cheaper alternative.</item>
+        <item>Other</item>
+    </string-array>
+
+    <!--    <string name="facebook_app_id">[APP_ID]</string>-->
+    <!--    <string name="fb_login_protocol_scheme">fb[APP_ID]</string>-->
+
+    <string name="facebook_app_id">303427880192019</string>
+    <string name="fb_login_protocol_scheme">fb303427880192019</string>
+    <string name="send_otp">Send OTP</string>
+
+    <string name="generate_otp">Generate OTP</string>
+    <string name="received_message">Received Message</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <!--    <string name="default_web_client_id"></string>-->
+
+</resources>

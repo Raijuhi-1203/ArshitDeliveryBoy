@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ArshitDeliveryBoy" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/app_org</item>
+        <item name="colorPrimaryDark">@color/app_org</item>
+        <item name="colorAccent">@color/app_org</item>
+
+    </style>
+</resources>

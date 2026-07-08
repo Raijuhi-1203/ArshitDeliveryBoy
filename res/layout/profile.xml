@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/header2"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/bt_addcart">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:fontFamily="@font/custom_font"
+                                android:text="Basic Info"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:fontFamily="@font/custom_font"
+                                android:text="Name"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/txnm"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:fontFamily="@font/custom_font"
+                                android:text="Email"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/txmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="Mobile No"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/txmob"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="Gender"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/spnrgender"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="Address"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/add"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="State"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/spnrstate"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"/>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="City"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/spnrcity"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="Pincode"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/pincode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+
+                            <Button
+                                android:textSize="16dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/btn_submit2"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:text="SAVE CHANGES"
+                                android:textColor="@color/yellow"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/btnorange" />
+
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:fontFamily="@font/custom_font"
+                                android:text="Profile Photo"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:background="@drawable/box"
+                                android:padding="10dp"
+                                android:src="@drawable/photo"
+                                android:layout_margin="10dp"
+                                android:id="@+id/img_user"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"/>
+
+                            <TextView
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:textAlignment="center"
+                                android:layout_margin="3dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imguserpicnm"
+                                android:textColor="@color/black" />
+
+                            <Button
+                                android:id="@+id/btn_submit"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:text="SAVE CHANGES"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/custom_font"
+                                android:textColor="@color/yellow"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/btnorange" />
+
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:fontFamily="@font/custom_font"
+                                android:text="Change Password"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:fontFamily="@font/custom_font"
+                                android:text="Current Password"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/txcp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:fontFamily="@font/custom_font"
+                                android:text="New Password"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/txnp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <Button
+                                android:id="@+id/btn_submit3"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:text="SAVE CHANGES"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/custom_font"
+                                android:textColor="@color/yellow"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginBottom="15dp"
+                                android:background="@drawable/btnorange" />
+
+                        </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
